@@ -582,3 +582,28 @@ footer p {
     border-radius: 5px;
 }
 
+/* Custom cursor styles */
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.custom-cursor::after {
+    content: '';
+    position: absolute;
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    background-color: #ff4a0d;  
+    box-shadow: 0 0 10px rgba(144, 140, 140, 0.684); 
+    transform: translate(-50%, -50%);
+}
+/* Hided default cursor */
+body {
+    cursor: none;
+}
+
+

@@ -26,3 +26,25 @@ item.addEventListener('click', function (e) {
 });
 });
 });
+
+/* custom cursor */
+document.addEventListener('DOMContentLoaded', function() {
+    const cursor = document.createElement('div');
+    cursor.classList.add('custom-cursor');
+    document.body.appendChild(cursor);
+
+    document.addEventListener('mousemove', function(e) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+
+    const links = document.querySelectorAll('a, button');
+    links.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            cursor.classList.add('hover');
+        });
+        link.addEventListener('mouseleave', function() {
+            cursor.classList.remove('hover');
+        });
+    });
+});
