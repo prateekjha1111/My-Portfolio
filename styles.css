@@ -442,14 +442,13 @@ section h2 {
     background-color: #101010; 
     text-align: center;
 }
-
 .contact h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .contact-list {
     list-style-type: none;
-    padding: 0;
+    margin-top: 20px;
 }
 .contact-list li {
     margin-bottom: 15px;
@@ -462,10 +461,24 @@ section h2 {
     color: #676767;
 }
 
-hr {
-    min-width: 350px;
-    max-width: 800px;
-    margin: 5px auto;
+.bar2 {
+    min-width: 200px;
+    max-width: 600px;
+    margin: 20px auto;
+    height: 3px;
+    border-radius: 8px;
+    background-color: rgb(184, 184, 184);
+    border: none;
+}
+.bar1 {
+    min-width: 100px;
+    max-width: 180px;
+    margin: 3px auto;
+    margin-bottom: 20px;
+    height: 6px;
+    border-radius: 8px;
+    background-color: rgb(220, 74, 30);
+    border: none;
 }
 
 /*contact-form*/
@@ -557,7 +570,7 @@ footer p {
 
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
